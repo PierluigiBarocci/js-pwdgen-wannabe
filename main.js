@@ -9,3 +9,6 @@ console.log(name);
 console.log(surname);
 console.log(colour);
 console.log(togheter);
+
+// comando per inserire la password in html
+document.getElementById('text').innerHTML = togheter;
