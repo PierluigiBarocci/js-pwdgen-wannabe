@@ -1,8 +1,8 @@
 // variabili
 var name = prompt('Ciao, come ti chiami?');
 var surname = prompt('Qual è il tuo cognome?');
-var colour = prompt('Qual è il tuo colore preferito?');
 var age = prompt('Il tuo anno di nascita?');
+var colour = prompt('Qual è il tuo colore preferito?');
 // to.String transforma num in string
 var ageString = age.toString();
 // charAt(index) prende la lettera nella posizione che vuoi
@@ -23,3 +23,7 @@ var togheterShort = resName1 + resName2 +resName3 + resSurname1 + resSurname2 + 
 // comando per inserire la password in html
 document.getElementById('text').innerHTML = togheter;
 document.getElementById('textShort').innerHTML = togheterShort;
+document.getElementById('nome').innerHTML = name;
+document.getElementById('cognome').innerHTML = surname;
+document.getElementById('anno').innerHTML = age;
+document.getElementById('colore').innerHTML = colour;

@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Pwd-Generator Wanna Be</title>
@@ -10,12 +11,29 @@
     <body>
         <div class="jumbotron text-center">
             <div class="container">
-                <h1 class="display-3">La password generata è:</h1>
-                <hr class="my-4">
-                <p class="lead"><span id="text"></span>19</p>
-                <h3 class="display-4">Se vuoi Qualcosa di più breve:</h3>
-                <hr class="my-4">
-                <p class="lead"><span id="textShort"></span></p>
+                <div class="col-md-12">
+                    <h1 class="display-4">Pier Password Generator  <i class="fas fa-lock fa-xs"></i></h1>
+                    <hr class="my-4">
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>Questi sono i dati che hai inserito:</h4>
+                        <ul class="list-unstyled text-left">
+                            <li>Nome: <span id="nome"></span></li>
+                            <li>Cognome: <span id="cognome"></span></li>
+                            <li>Anno di Nascita: <span id="anno"></span></li>
+                            <li>Colore Preferito: <span id="colore"></span></li>
+                        </ul>
+                        <hr class="my-4">
+                    </div>
+                    <div class="col-md-6">
+                        <h4>Queste le Passwords suggerite:</h4>
+                        <p>Password per intero:</p>
+                        <p class="lead"><strong><u><span id="text"></span>19</u></strong></p>
+                        <p>Se invece ne vuoi una più leggera:</p>
+                        <p class="lead"><strong><u><span id="textShort"></span></u></strong></p>
+                    </div>
+                </div>
             </div>
         </div>
         <script src="main.js" charset="utf-8"></script>
